@@ -1,73 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles.css" />
   <title>Contacto</title>
 </head>
+
 <body>
-  <section class="contact-container">
-    <div class="contact-split"></div>
-    <div class="contact-split-negative"></div>
-    <button class="contact-handle" aria-label="Mover divisor">⇆</button>
-
-    <!-- envoltura segura (no rompe estilos si la usas) -->
-    <div class="contact-inner">
-      <!-- Título fuera del grid (forma más limpia) -->
-      <h2 class="contact-heading">Contáctame</h2>
-
-      <!-- Contenido en 2 columnas -->
-      <div class="contact-content">
-        <!-- IZQUIERDA: formulario -->
+  <section class="theme-compare" data-theme="light"> <!-- Fondo lado claro -->
+    <div class="theme-side theme-light"></div> <!-- Fondo lado oscuro -->
+    <div class="theme-side theme-dark"></div> <!-- Contenido único -->
+    <div class="contact-inner"> <!-- Título dividido (mejor compatibilidad) -->
+      <h2 class="contact-heading" aria-label="Contáctame"> <span class="heading-left"
+          aria-hidden="true">Contáctame</span> <span class="heading-right" aria-hidden="true">Contáctame</span> </h2>
+      <div class="contact-content"> <!-- izquierda -->
         <div class="contact-left">
-          <form class="contact-form" action="#" method="post" novalidate>
-            <input type="text" name="name" placeholder="Name" required />
-            <input type="email" name="email" placeholder="Email" required />
-            <textarea name="message" rows="6" placeholder="Message" required></textarea>
-            <button type="submit">Send</button>
+          <form class="contact-form" action="#" method="post" novalidate> <input type="text" name="name"
+              placeholder="Name" required /> <input type="email" name="email" placeholder="Email" required /> <textarea
+              name="message" rows="6" placeholder="Message" required></textarea> <button type="submit">Send</button>
           </form>
-        </div>
-
-        <!-- DERECHA: info -->
+        </div> <!-- derecha -->
         <div class="contact-right">
-          <div class="contact-info">
-            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          <div class="contact-info"> <i class="fa-solid fa-location-dot"></i>
             <p>City, State</p>
           </div>
-          <div class="contact-info">
-            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          <div class="contact-info"> <i class="fa-solid fa-phone"></i>
             <p>(212) 555-2368</p>
           </div>
-          <div class="contact-info">
-            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          <div class="contact-info"> <i class="fa-solid fa-envelope"></i>
             <p>hitmeup@gmail.com</p>
           </div>
-
-          <div class="contact-divider" role="separator" aria-hidden="true"></div>
-
-          <div class="contact-icons" aria-hidden="true">
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-dribbble"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          </div>
-
-          <div class="contact-divider" role="separator" aria-hidden="true"></div>
-
+          <div class="contact-divider"></div>
+          <div class="contact-icons"> <a href="#"><i class="fa-brands fa-github"></i></a> <a href="#"><i
+                class="fa-brands fa-dribbble"></i></a> <a href="#"><i class="fa-brands fa-twitter"></i></a> <a
+              href="#"><i class="fa-brands fa-instagram"></i></a> </div>
+          <div class="contact-divider"></div>
           <div class="contact-footer">© ALL OF THE RIGHTS RESERVED</div>
         </div>
       </div>
-    </div>
+    </div> <!-- Handle --> <button class="theme-handle" aria-label="Mover divisor">⇆</button>
   </section>
-
   <script src="script.js"></script>
 </body>
+
 </html>
